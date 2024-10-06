@@ -1,4 +1,4 @@
-# Industry Safety Detection Using YOLOv8
+# Industry Safety Detection Using YOLOv7
 
 # Introduction
 
