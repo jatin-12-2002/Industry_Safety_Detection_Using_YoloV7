@@ -1,0 +1,5 @@
+train: /workspaces/Industry_Safety_Detection_Using_YoloV7/train.txt
+val: /workspaces/Industry_Safety_Detection_Using_YoloV7/val.txt
+
+nc: 5
+names: ['Helmet', 'Goggles', 'Jacket', 'Gloves', 'Footwear']
