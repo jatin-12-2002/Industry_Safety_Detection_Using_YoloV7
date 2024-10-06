@@ -54,7 +54,7 @@ Number/Size of Images   : Total      : 151 (2 MB)
 
 </pre>
 ## Results<a id='results-'></a>
-We have achieved following results with YOLOv7 model for detection of the 5 clasess like ,'**Mask**', '**machinery**', '**Safety Vest**' and others from Construction Site Safety Images.
+We have achieved following results with YOLOv7 model for detection of the 5 clasess like ,'**Helmet**', '**Goggles**', '**Jacket**' and others from Construction Site Safety Images.
 
 <pre>
 <b>Performance Metrics </b>
@@ -140,7 +140,7 @@ git clone https://github.com/WongKinYiu/yolov7
 rm -rf yolov7/.git
 ```
 
-### Step 11 - If want to make your own model, Change the following lines in yolov7 folder's Files:
+### Step 11 - If you want to make your own model, Change the following lines in yolov7 folder's Files:
 
 ### Step 11.1 - In *yolov7/data/custom.yaml*, Change the train and val paths based on your system's path and give proper path to the train.txt and val.txt files. Also, you can change nc(no. of classes) and class's names according to your needs.
 
@@ -154,24 +154,24 @@ cd yolov7
 wget "https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt"
 ```
 
-### Step 13 (Optional)- Add best.pt model in yolov7 folder
+### Step 12 (Optional)- Add best.pt model in yolov7 folder
 Follow this Step if you don't want to train model for 100 epochs as It will take a long time to complete training. I had already trained model named as **best.pt** for 100 epochs.
 
 As **best.pt** is very large in size(72 MB), So I cannot push it into github repository directly. So, you had to update it manually in and you had to insert the best.pt file in **yolov7 folder**.
 
 You can download the **best.pt** from [here](https://drive.google.com/file/d/1eJRqDVAGSv6iFH4rahv_--LmVWPQYfRP/view?usp=sharing)
 
-### Step 12 - Upload the best.pt model in your S3 Bucket
+### Step 13 - Upload the best.pt model in your S3 Bucket
 ```bash
 aws s3 cp path/to/your/best.pt s3://your-bucket-name/best.pt
 ```
 
-### Step 12 - Run the application server
+### Step 14 - Run the application server
 ```bash
 python app.py
 ```
 
-### Step 13 - Prediction application
+### Step 15 - Prediction application
 ```bash
 http://localhost:8080/
 
