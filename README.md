@@ -11,7 +11,7 @@ To ensure seamless deployment and scalability, the project incorporates a **CI/C
 ## Tech Stack Used
 1) Python
 2) Flask
-3) YOLOv8
+3) YOLOv7
 4) Docker
 5) PyTorch
 6) OpenCV
@@ -106,7 +106,7 @@ AWS_FOLDER = Press Enter and move on
 ### Step 7 - Prepare your Dataset zip file named isd_data_mini.zip
 Your Zip file should contain following folders and files in this order:
 ```bash
-isd_data.zip
+isd_data_mini.zip
 │
 ├── images
 │   ├── train
@@ -301,11 +301,11 @@ Public_Address:8080
 ```
 
 ## Conclusion 
-1. The **YOLOv8** model effectively detects 10 safety-related classes in real-time, achieving impressive mAP scores of **88.90% (mAP_50)** and **65.30% (mAP_50_95)**, significantly improving workplace safety on industrial sites.
-2. The automated MLOps pipeline streamlines the workflow from data ingestion to model evaluation using MLflow, ensuring high-quality model performance and efficient version control.
+1. The **YOLOv7** model effectively detects 5 safety-related classes in real-time, achieving impressive mAP scores of **92.00% (mAP50)** and **49.80% (mAP50-95)**, significantly improving workplace safety on industrial sites.
+2. The **MLOps pipeline** ensures an efficient and scalable process, from data ingestion to model deployment, making the system adaptable for ongoing improvements and updates.
 3. The integration of **CI/CD pipelines** with **Docker** and **AWS** infrastructure enables seamless deployment, continuous integration, and rapid updates, allowing for efficient scalability.
 4. This solution provides a robust and scalable system for industry safety detection, with potential for future enhancements such as real-time alerting and incorporating more complex detection models.
-5. The project sets a solid foundation for ongoing improvements, demonstrating that real-time detection can significantly contribute to reducing workplace accidents in industrial environments.
+5. Future enhancements could include adding more safety-related classes, integrating live video feeds, and improving the **CI/CD pipeline** for faster deployment.
 
 ## Some Common Errors and their Solutions
 
