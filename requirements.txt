@@ -8,6 +8,7 @@ mypy-boto3-s3
 flask-cors
 flask
 awscli
+ensure
 
 
 # Usage: pip install -r requirements.txt
